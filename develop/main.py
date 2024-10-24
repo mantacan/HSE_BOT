@@ -6,7 +6,7 @@ def read_token_from_file(file_path):
         return file.read().strip()
 
 def main():
-    token = read_token_from_file('../config.txt')
+    token = read_token_from_file('../../config.txt')
     application = Application.builder().token(token).build()
 
     Controller(application)

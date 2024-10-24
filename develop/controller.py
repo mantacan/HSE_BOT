@@ -13,7 +13,7 @@ def read_api_key_from_config(file_path: str) -> str:
 
 class Controller:
     def __init__(self, application):
-        api_key = read_api_key_from_config('../config.ini')
+        api_key = read_api_key_from_config('../../config.ini')
         self.db_manager = DatabaseManager(
             db_name="bot_database",
             user="postgres",
